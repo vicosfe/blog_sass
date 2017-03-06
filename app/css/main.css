@@ -1,0 +1,83 @@
+body {
+  min-width: 800px;
+  background-color: #eee; }
+  body img {
+    max-width: 100%; }
+  body .header {
+    width: 100%;
+    height: 50vh;
+    background-image: url(../img/header-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; }
+    body .header__content .content__topNav:hover {
+      background-color: rgba(0, 0, 0, 0.7); }
+    body .header__content .content__topNav {
+      height: 75px;
+      background-color: rgba(0, 0, 0, 0.33);
+      position: relative;
+      -webkit-transition: linear .3s;
+      transition: linear .3s; }
+      body .header__content .content__topNav > ul {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+        width: 50%;
+        position: absolute;
+        -webkit-transform: translate(0, 50%);
+        -ms-transform: translate(0, 50%);
+        transform: translate(0, 50%); }
+        body .header__content .content__topNav > ul > li {
+          list-style-type: none; }
+          body .header__content .content__topNav > ul > li > a {
+            color: #fff;
+            text-decoration: none;
+            font-family: "OpenSans"; }
+          body .header__content .content__topNav > ul > li > a:hover {
+            color: #f97755; }
+  body .hid {
+    opacity: 0; }
+  body .vis {
+    opacity: 1; }
+  body .container {
+    margin: 10vw auto;
+    width: 100%;
+    padding: 2vw 0;
+    overflow: hidden; }
+    body .container__item {
+      margin-bottom: 10rem;
+      background-color: #fff;
+      padding: 2rem;
+      -webkit-box-shadow: 0 0 15px rgba(101, 95, 95, 0.11);
+      box-shadow: 0 0 15px rgba(101, 95, 95, 0.11); }
+      body .container__item .item__blockInfo .blockInfo__photo {
+        width: 150px;
+        height: 150px;
+        overflow: hidden;
+        -webkit-border-radius: 150px;
+        border-radius: 150px;
+        margin: 0 auto;
+        border: 5px solid #fff;
+        -webkit-box-shadow: 0px 0px 20px 0px #c5c1c1;
+        box-shadow: 0px 0px 20px 0px #c5c1c1; }
+      body .container__item .item__blockInfo .blockInfo__description {
+        font-size: 1rem;
+        font-family: "OpenSans";
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 2.5rem; }
+      body .container__item .item__blockInfo .blockInfo__text {
+        font-size: .8rem;
+        font-family: "OpenSansLight";
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 2rem; }

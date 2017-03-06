@@ -1,0 +1,47 @@
+@font-face {
+  font-family: "GillSansNovaLight";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/GillSansNovaLight.eot?#iefix") format("embedded-opentype"), url("../fonts/GillSansNovaLight.woff") format("woff"), url("../fonts/GillSansNovaLight.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "GillSansNovaHeavy";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/GillSansNovaHeavy.eot?#iefix") format("embedded-opentype"), url("../fonts/GillSansNovaHeavy.woff") format("woff"), url("../fonts/GillSansNovaHeavy.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "GillSansNovaBold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/GillSansNovaBold.eot?#iefix") format("embedded-opentype"), url("../fonts/GillSansNovaBold.woff") format("woff"), url("../fonts/GillSansNovaBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "GillSansNovaBook";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/GillSansNovaBook.eot?#iefix") format("embedded-opentype"), url("../fonts/GillSansNovaBook.woff") format("woff"), url("../fonts/GillSansNovaBook.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "OpenSans";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/OpenSans-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "OpenSansExtraBold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/OpenSans-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-ExtraBold.woff") format("woff"), url("../fonts/OpenSans-ExtraBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "OpenSansBold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/OpenSans-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Bold.woff") format("woff"), url("../fonts/OpenSans-Bold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "OpenSansLight";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/OpenSans-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Light.ttf") format("truetype"); }
