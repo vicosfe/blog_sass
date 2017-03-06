@@ -10,38 +10,80 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center; }
-    body .header__content .content__topNav:hover {
-      background-color: rgba(0, 0, 0, 0.7); }
-    body .header__content .content__topNav {
-      height: 75px;
-      background-color: rgba(0, 0, 0, 0.33);
-      position: relative;
-      -webkit-transition: linear .3s;
-      transition: linear .3s; }
-      body .header__content .content__topNav > ul {
-        display: -webkit-flex;
-        display: -moz-flex;
-        display: -ms-flex;
-        display: -o-flex;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-justify-content: space-around;
-        -ms-flex-pack: distribute;
-        justify-content: space-around;
-        width: 50%;
-        position: absolute;
-        -webkit-transform: translate(0, 50%);
-        -ms-transform: translate(0, 50%);
-        transform: translate(0, 50%); }
-        body .header__content .content__topNav > ul > li {
-          list-style-type: none; }
-          body .header__content .content__topNav > ul > li > a {
-            color: #fff;
-            text-decoration: none;
-            font-family: "OpenSans"; }
-          body .header__content .content__topNav > ul > li > a:hover {
-            color: #f97755; }
+    body .header__content {
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+      body .header__content .content__topNav:hover {
+        background-color: rgba(0, 0, 0, 0.7); }
+      body .header__content .content__topNav {
+        height: 75px;
+        background-color: rgba(0, 0, 0, 0.33);
+        position: relative;
+        -webkit-transition: linear .3s;
+        transition: linear .3s;
+        width: 100%; }
+        body .header__content .content__topNav > ul {
+          display: -webkit-flex;
+          display: -moz-flex;
+          display: -ms-flex;
+          display: -o-flex;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-justify-content: space-around;
+          -ms-flex-pack: distribute;
+          justify-content: space-around;
+          width: 30%;
+          position: absolute;
+          -webkit-transform: translate(0, 50%);
+          -ms-transform: translate(0, 50%);
+          transform: translate(0, 50%); }
+          body .header__content .content__topNav > ul > li {
+            list-style-type: none; }
+            body .header__content .content__topNav > ul > li > a {
+              color: #fff;
+              text-decoration: none;
+              font-family: "OpenSans";
+              -webkit-transition: .3s all;
+              transition: .3s all; }
+            body .header__content .content__topNav > ul > li > a:hover {
+              color: #f97755; }
+        body .header__content .content__topNav .socIcons {
+          display: -webkit-flex;
+          display: -moz-flex;
+          display: -ms-flex;
+          display: -o-flex;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-justify-content: space-around;
+          -ms-flex-pack: distribute;
+          justify-content: space-around;
+          width: 30%;
+          right: 0;
+          position: absolute;
+          -webkit-transform: translate(0, 50%);
+          -ms-transform: translate(0, 50%);
+          transform: translate(0, 50%); }
+          body .header__content .content__topNav .socIcons > li {
+            list-style-type: none; }
+            body .header__content .content__topNav .socIcons > li > a {
+              color: #fff;
+              text-decoration: none;
+              font-family: "OpenSans";
+              -webkit-transition: .3s all;
+              transition: .3s all; }
+            body .header__content .content__topNav .socIcons > li > a:hover {
+              color: #f97755; }
   body .hid {
     opacity: 0; }
   body .vis {
