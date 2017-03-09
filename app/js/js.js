@@ -1,10 +1,89 @@
 $(document).ready(function() {
-	var  js_container__item = $(".js_container__item");
-$(js_container__item).addClass("hid").viewportChecker({
-classToAdd: 'vis animated fadeIn',
+ var parallax1 = $(".parallax1")
+ var parallax2 = $(".parallax2")
+ var parallax3 = $(".parallax3")
+ var parallax4 = $(".parallax4")
+ var parallax5 = $(".parallax5")
+ var jsContainerForAnimate = $(".jsContainerForAnimate");
+ var jsContainerForAnimate2 = $(".jsContainerForAnimate2");
+ var jsContainerForAnimateLeft = $(".screen2 .jsContainerForAnimateLeft");
+ var jsContainerForAnimateRight = $(".screen2 .jsContainerForAnimateRight");
+ var JsContainerForAnimateDown = $(".screen2 .JsContainerForAnimateDown");
+
+
+$(jsContainerForAnimate).addClass("hid").viewportChecker({
+classToAdd: 'vis animated fadeInLeftBig',
 offset: 100
 });
+
+
+$(jsContainerForAnimateLeft).addClass("hid").viewportChecker({//html text
+classToAdd: 'vis animated fadeInLeftBig',
+offset: 100
 });
+
+$(jsContainerForAnimateRight).addClass("hid").viewportChecker({//css text
+classToAdd: 'vis animated fadeInRightBig',
+offset: 100
+});
+
+$(JsContainerForAnimateDown).addClass("hid").viewportChecker({//css text
+classToAdd: 'vis animated fadeInUpBig',
+offset: 100
+});
+
+$(window).scroll(function(){
+    var container = $(".container")
+    var st = $(this).scrollTop();
+    $(container).css({
+        "transform" : "translate(0%, " + st/5 + "px" 
+    });
+});
+// мелкие элементы
+$(window).scroll(function(){
+    var st = $(this).scrollTop();
+    $(parallax1).css({
+        "transform" : "translate(" + st/6 + "px" + ","  + st/4 + "px)" 
+    });
+});
+
+$(window).scroll(function(){
+    var st = $(this).scrollTop();
+    $(parallax2).css({
+        "transform" : "translate(0%, " + st/4 + "px" 
+    });
+});
+
+$(window).scroll(function(){
+    var st = $(this).scrollTop();
+    $(parallax3).css({
+        "transform" : "translate(0%, " + st/3 + "px" 
+    });
+});
+
+$(window).scroll(function(){
+    var st = $(this).scrollTop();
+    $(parallax4).css({
+        "transform" : "translate(0%, " + st/2 + "px" 
+    });
+});
+
+$(window).scroll(function(){
+    var st = $(this).scrollTop();
+    $(parallax5).css({
+        "transform" : "translate(0%, " + st/5 + "px" 
+    });
+});
+
+
+
+
+
+
+});
+
+
+
 
 
 

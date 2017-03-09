@@ -1,15 +1,22 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
 body {
   min-width: 800px;
   background-color: #eee; }
   body img {
     max-width: 100%; }
+  body section {
+    overflow: hidden; }
   body .header {
     width: 100%;
-    height: 50vh;
+    height: 100vh;
     background-image: url(../img/header-img.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center; }
+    background-position: center center;
+    z-index: 5; }
     body .header__content {
       display: -webkit-flex;
       display: -moz-flex;
@@ -21,15 +28,20 @@ body {
       -webkit-box-pack: justify;
       -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
-      justify-content: space-between; }
+      justify-content: space-between;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 15; }
       body .header__content .content__topNav:hover {
         background-color: rgba(0, 0, 0, 0.7); }
       body .header__content .content__topNav {
         height: 75px;
         background-color: rgba(0, 0, 0, 0.33);
         position: relative;
-        -webkit-transition: linear .3s;
-        transition: linear .3s;
+        -webkit-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
         width: 100%; }
         body .header__content .content__topNav > ul {
           display: -webkit-flex;
@@ -42,7 +54,7 @@ body {
           -webkit-justify-content: space-around;
           -ms-flex-pack: distribute;
           justify-content: space-around;
-          width: 30%;
+          width: 20%;
           position: absolute;
           -webkit-transform: translate(0, 50%);
           -ms-transform: translate(0, 50%);
@@ -53,10 +65,12 @@ body {
               color: #fff;
               text-decoration: none;
               font-family: "OpenSans";
-              -webkit-transition: .3s all;
-              transition: .3s all; }
+              -webkit-transition: all .3s ease-in-out;
+              transition: all .3s ease-in-out; }
             body .header__content .content__topNav > ul > li > a:hover {
-              color: #f97755; }
+              color: #f97755;
+              -webkit-transition: all .3s ease-in-out;
+              transition: all .3s ease-in-out; }
         body .header__content .content__topNav .socIcons {
           display: -webkit-flex;
           display: -moz-flex;
@@ -80,46 +94,136 @@ body {
               color: #fff;
               text-decoration: none;
               font-family: "OpenSans";
-              -webkit-transition: .3s all;
-              transition: .3s all; }
+              -webkit-transition: all .3s ease-in-out;
+              transition: all .3s ease-in-out; }
             body .header__content .content__topNav .socIcons > li > a:hover {
               color: #f97755; }
   body .hid {
     opacity: 0; }
   body .vis {
     opacity: 1; }
-  body .container {
-    margin: 10vw auto;
-    width: 100%;
-    padding: 2vw 0;
-    overflow: hidden; }
-    body .container__item {
-      margin-bottom: 10rem;
-      background-color: #fff;
-      padding: 2rem;
-      -webkit-box-shadow: 0 0 15px rgba(101, 95, 95, 0.11);
-      box-shadow: 0 0 15px rgba(101, 95, 95, 0.11); }
-      body .container__item .item__blockInfo .blockInfo__photo {
-        width: 150px;
-        height: 150px;
-        overflow: hidden;
-        -webkit-border-radius: 150px;
-        border-radius: 150px;
-        margin: 0 auto;
-        border: 5px solid #fff;
-        -webkit-box-shadow: 0px 0px 20px 0px #c5c1c1;
-        box-shadow: 0px 0px 20px 0px #c5c1c1; }
-      body .container__item .item__blockInfo .blockInfo__description {
-        font-size: 1rem;
-        font-family: "OpenSans";
+  body .screen1 {
+    height: 100vh;
+    position: relative;
+    background-color: #FFF;
+    padding: 10vh 0; }
+    body .screen1 .jsContainerForAnimate {
+      width: 100%; }
+      body .screen1 .jsContainerForAnimate .container {
         width: 50%;
         margin: 0 auto;
-        text-align: center;
-        margin-bottom: 2.5rem; }
-      body .container__item .item__blockInfo .blockInfo__text {
-        font-size: .8rem;
-        font-family: "OpenSansLight";
-        width: 80%;
-        margin: 0 auto;
-        text-align: center;
-        margin-bottom: 2rem; }
+        position: relative; }
+        body .screen1 .jsContainerForAnimate .container .parallax {
+          width: 25px;
+          height: 25px;
+          -webkit-border-radius: 150px;
+          border-radius: 150px;
+          position: absolute;
+          z-index: 2; }
+        body .screen1 .jsContainerForAnimate .container .parallax1 {
+          background-color: red;
+          top: 200px;
+          left: 150px;
+          width: 40px;
+          height: 40px; }
+        body .screen1 .jsContainerForAnimate .container .parallax2 {
+          background-color: green;
+          top: -40px;
+          right: -50px;
+          width: 10px;
+          height: 10px; }
+        body .screen1 .jsContainerForAnimate .container .parallax3 {
+          background-color: grey;
+          top: 0px;
+          left: -180px; }
+        body .screen1 .jsContainerForAnimate .container .parallax4 {
+          background-color: black;
+          top: -24px;
+          right: -100px;
+          width: 30px;
+          height: 30px; }
+        body .screen1 .jsContainerForAnimate .container .parallax5 {
+          background-color: pink;
+          top: -250px;
+          left: -150px;
+          width: 15px;
+          height: 15px; }
+        body .screen1 .jsContainerForAnimate .container__item {
+          background-color: #fff;
+          padding: 2rem;
+          -webkit-box-shadow: 0 0 15px rgba(101, 95, 95, 0.11);
+          box-shadow: 0 0 15px rgba(101, 95, 95, 0.11); }
+          body .screen1 .jsContainerForAnimate .container__item .item__blockInfo .blockInfo__photo {
+            width: 150px;
+            height: 150px;
+            overflow: hidden;
+            -webkit-border-radius: 150px;
+            border-radius: 150px;
+            margin: 0 auto;
+            border: 5px solid #fff;
+            -webkit-box-shadow: 0px 0px 20px 0px #c5c1c1;
+            box-shadow: 0px 0px 20px 0px #c5c1c1; }
+          body .screen1 .jsContainerForAnimate .container__item .item__blockInfo .blockInfo__description {
+            font-size: 1rem;
+            font-family: "OpenSans";
+            width: 50%;
+            margin: 0 auto;
+            text-align: center;
+            margin-bottom: 2.5rem; }
+          body .screen1 .jsContainerForAnimate .container__item .item__blockInfo .blockInfo__text {
+            font-size: .8rem;
+            font-family: "OpenSansLight";
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+            margin-bottom: 2rem; }
+  body .screen2 {
+    height: 100vh;
+    position: relative;
+    background-color: #666;
+    position: relative; }
+    body .screen2 .jsContainerForAnimateLeft {
+      width: 45%;
+      text-align: center;
+      font-family: "OpenSans";
+      font-size: 4rem;
+      text-transform: uppercase;
+      color: #fff;
+      -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      transform: rotate(180deg);
+      opacity: 1;
+      position: absolute; }
+      body .screen2 .jsContainerForAnimateLeft > div {
+        text-shadow: 4px 5px 1px #000;
+        -webkit-transform: rotateX(-35deg) rotateY(-11deg) rotateZ(-18deg);
+        transform: rotateX(-35deg) rotateY(-11deg) rotateZ(-18deg); }
+    body .screen2 .jsContainerForAnimateRight {
+      width: 45%;
+      text-align: center;
+      font-family: "OpenSans";
+      font-size: 3rem;
+      text-transform: uppercase;
+      color: #fff;
+      -webkit-transform: rotateZ(180deg);
+      -ms-transform: rotate(180deg);
+      transform: rotateZ(180deg);
+      opacity: 1;
+      position: absolute;
+      top: 0;
+      right: 0; }
+      body .screen2 .jsContainerForAnimateRight > div {
+        text-shadow: 4px 5px 1px #000;
+        -webkit-transform: rotateX(-35deg) rotateY(-11deg) rotateZ(-18deg);
+        transform: rotateX(-35deg) rotateY(-11deg) rotateZ(-18deg); }
+  body .JsContainerForAnimateDown {
+    font-family: "OpenSans";
+    font-size: 4.3rem;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: absolute; }
+    body .JsContainerForAnimateDown > div {
+      text-shadow: 4px 5px 1px #000;
+      -webkit-transform: rotateX(-35deg) rotateY(-11deg) rotateZ(-18deg);
+      transform: rotateX(-35deg) rotateY(-11deg) rotateZ(-18deg); }
